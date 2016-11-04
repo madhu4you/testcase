@@ -1,0 +1,18 @@
+{
+  "name": "jasmine",
+  "version": "1.0.0",
+  "description": "Jasmin test case for javascript snipets",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "jasmine-core": "^2.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Madhu",
+  "license": "ISC"
+}
