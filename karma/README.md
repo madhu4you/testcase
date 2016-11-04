@@ -14,11 +14,11 @@
 3. The **ngMock** module is the namespace of angular.mocks
 
 ```
-basic example of mock 
-describe('add controller', function() {  //describe the module test case
+basic example of ngMock 
+describe('controller', function() {  //describe the module test case
         var $controller;
         var $q;
-        beforeEach(inject(function(_$controller_, _$q_){
+        beforeEach(inject(function(_$controller_, _$q_){  //inject the dependency services or modules
             $controller = _$controller_;
             $scope = {};
             $q = _$q_;
@@ -60,7 +60,7 @@ describe('add controller', function() {  //describe the module test case
     mkdir app //your script files, controllers,filters etc.
     mkdir tests //here we will keep our tests.
     ```
-7. karma.conf.js
+7. Create karma.conf.js
     ```
     karma init
     ```
@@ -80,3 +80,8 @@ describe('add controller', function() {  //describe the module test case
     node_modules/angular-mocks/angular-mocks.js
     ```
 
+12. Start Karma 
+
+    ```
+    karma start
+    ```
