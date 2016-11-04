@@ -1,3 +1,12 @@
+#What is Karma?
+
+1. *Karma* is a JavaScript test runner created by *Angular JS* team.
+2. *Karma* provides helpful tools thaat make it easier to us to call our Jasmine tests whilst we are writing code.
+3. *Karma* is a JavaScript command line tool that can be used to spawn a web browser which loads your applicaiton's scource code and executes your tests
+4. *Karma* can be configured to run aganist various Browsers
+5. *Karma* is executed on the command line and will display the results of your tesrs on the command line once the have run in the browser.
+6. *Karma* is a NodeJS applicaiton, and should be installed through npm
+
 # Karma Configuration
 ###### Navigate to your working directory in your terminal or command prompt and follow the below instructions.
 
@@ -19,9 +28,11 @@
     npm install angular-mocks --save-dev
     ```
 5. Browsers
-    Install browser launcher on which you want karma to run your tests. We need to install atleast one browser. I’ll use PhantomJs.
+    Install browser launcher on which you want karma to run your tests. We need to install atleast one browser. I’ll use PhantomJs or chrome.
     ```
     npm install karma-phantomjs-launcher --save-dev
+        or
+    npm install karma-chrome-launcher --save-dev
     ```
 6. Create two folders in your working directory.
     ```
@@ -47,3 +58,4 @@
     ```
     node_modules/angular-mocks/angular-mocks.js
     ```
+
