@@ -1,11 +1,32 @@
 #What is Karma?
 
-1. *Karma* is a JavaScript test runner created by *Angular JS* team.
-2. *Karma* provides helpful tools thaat make it easier to us to call our Jasmine tests whilst we are writing code.
-3. *Karma* is a JavaScript command line tool that can be used to spawn a web browser which loads your applicaiton's scource code and executes your tests
-4. *Karma* can be configured to run aganist various Browsers
-5. *Karma* is executed on the command line and will display the results of your tesrs on the command line once the have run in the browser.
-6. *Karma* is a NodeJS applicaiton, and should be installed through npm
+1. **Karma** is a JavaScript test runner created by **Angular JS** team.
+2. **Karma** provides helpful tools thaat make it easier to us to call our **Jasmine** tests whilst we are writing code.
+3. **Karma** is a JavaScript command line tool that can be used to spawn a web browser which loads your applicaiton's scource code and executes your tests
+4. **Karma** can be configured to run aganist various Browsers
+5. **Karma** is executed on the command line and will display the results of your tesrs on the command line once the have run in the browser.
+6. **Karma** is a NodeJS applicaiton, and should be installed through npm
+
+#What is ngMock?
+
+1. The **ngMock** module provides support to inject and mock Angular services into unit tests.
+2. The **ngMock** also extends various core ng services such that can be inspected and controlled in a synchronous manner within test code.
+3. The **ngMock** module is the namespace of angular.mocks
+
+```
+basic example of mock 
+describe('add controller', function() {  //describe the module test case
+        var $controller;
+        var $q;
+        beforeEach(inject(function(_$controller_, _$q_){
+            $controller = _$controller_;
+            $scope = {};
+            $q = _$q_;
+            $rootScope = _$rootScope_;
+        }));
+    });
+
+```
 
 # Karma Configuration
 ###### Navigate to your working directory in your terminal or command prompt and follow the below instructions.
